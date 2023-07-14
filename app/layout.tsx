@@ -2,7 +2,7 @@
 import './globals.css'
 import { useRef, useState, useEffect } from 'react'
 import { useThree } from '@react-three/fiber'
-import { GlobalCanvas, ScrollScene, UseCanvas, SmoothScrollbar } from '@14islands/r3f-scroll-rig'
+import { GlobalCanvas } from '@14islands/r3f-scroll-rig'
 
 
 export default function RootLayout({
@@ -13,7 +13,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <GlobalCanvas />
+      <GlobalCanvas>
+      <ambientLight />
+      </GlobalCanvas>
         {children}</body>
     </html>
   )
