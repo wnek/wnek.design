@@ -3,56 +3,41 @@ import { useRef } from 'react';
 import {
   SmoothScrollbar,
   UseCanvas,
-  ViewportScrollScene,
+  ScrollScene,
 } from '@14islands/r3f-scroll-rig';
-import {
-  MeshDistortMaterial,
-  GradientTexture,
-  Box,
-  CameraControls,
-  PerspectiveCamera,
-} from '@react-three/drei';
 
 import studio from '@theatre/studio';
 import extension from '@theatre/r3f/dist/extension';
+import { getProject } from '@theatre/core';
+import { editable as e, SheetProvider, useCurrentSheet } from '@theatre/r3f';
+
+import { useFrame } from '@react-three/fiber';
 
 if (typeof window !== 'undefined') {
   studio.initialize();
   studio.extend(extension);
 }
-import { getProject } from '@theatre/core';
-import { editable as e, SheetProvider } from '@theatre/r3f';
 
-import styles from './page.module.css';
-const demoSheet = getProject('Demo Project').sheet('Demo Sheet');
-
-function Example() {
+function LockedCameraScene() {
   const el = useRef();
+  const demoSheet = getProject('Demo Project').sheet('Demo Sheet');
+  const sheet = useCurrentSheet();
   return (
     <>
       <div ref={el} className="Placeholder ScrollScene"></div>
       <UseCanvas>
-        <SheetProvider sheet={demoSheet}>
-          <ViewportScrollScene track={el}>
-            {(props) => (
-              <>
-                <CameraControls makeDefault />
-                <PerspectiveCamera
-                  fov={14}
-                  position={[0, 0, 20]}
-                  makeDefault
-                  near={1}
-                  far={5000}
-                  onUpdate={(self) => self.lookAt(0, 0, 0)}
-                />
-                <e.mesh theatreKey="Cube">
+        <ScrollScene track={el}>
+          {({ scale, ...props }) => (
+            <>
+              <SheetProvider sheet={demoSheet}>
+                <e.mesh theatreKey="Cube" scale={scale.xy.min() * 0.5}>
                   <boxGeometry args={[1, 1, 1]} />
-                  <meshPhysicalMaterial />
+                  <meshNormalMaterial />
                 </e.mesh>
-              </>
-            )}
-          </ViewportScrollScene>
-        </SheetProvider>
+              </SheetProvider>
+            </>
+          )}
+        </ScrollScene>
       </UseCanvas>
     </>
   );
@@ -63,8 +48,10 @@ export default function Home() {
       <SmoothScrollbar>
         {(bind) => (
           <article {...bind}>
-            <h1>Test</h1>
-            <Example />
+            <h1>Home Test</h1>
+            <LockedCameraScene />
+            <LockedCameraScene />
+            <LockedCameraScene />
           </article>
         )}
       </SmoothScrollbar>

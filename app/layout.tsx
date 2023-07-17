@@ -1,8 +1,6 @@
 'use client';
-
-import * as THREE from 'three';
-import './globals.css';
 import { GlobalCanvas } from '@14islands/r3f-scroll-rig';
+import './globals.css';
 
 export default function RootLayout({
   children,
@@ -12,9 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <GlobalCanvas gl={{ preserveDrawingBuffer: true }}>
-          <ambientLight />
-        </GlobalCanvas>
+        <GlobalCanvas gl={{ preserveDrawingBuffer: true }}></GlobalCanvas>
         {children}
       </body>
     </html>
