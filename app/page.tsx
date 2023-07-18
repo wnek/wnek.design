@@ -4,54 +4,67 @@ import {
   SmoothScrollbar,
   UseCanvas,
   ScrollScene,
+  useScrollbar,
 } from '@14islands/r3f-scroll-rig';
 
-import studio from '@theatre/studio';
-import extension from '@theatre/r3f/dist/extension';
-import { getProject } from '@theatre/core';
+import { StickyScrollScene } from '@14islands/r3f-scroll-rig/powerups';
+
+import { getProject, val } from '@theatre/core';
 import { editable as e, SheetProvider, useCurrentSheet } from '@theatre/r3f';
 
 import { useFrame } from '@react-three/fiber';
 
-if (typeof window !== 'undefined') {
-  studio.initialize();
-  studio.extend(extension);
-}
-
-function LockedCameraScene() {
-  const el = useRef();
+function TrackTheatreProgress({ scale, scrollState }) {
   const demoSheet = getProject('Demo Project').sheet('Demo Sheet');
-  const sheet = useCurrentSheet();
+  const sequenceLength = val(demoSheet.sequence.pointer.length);
+
+  useFrame(() => {
+    demoSheet.sequence.position = scrollState.scroll.progress * sequenceLength;
+  });
+
   return (
     <>
-      <div ref={el} className="Placeholder ScrollScene"></div>
+      <SheetProvider sheet={demoSheet}>
+        <e.mesh theatreKey="Cube" scale={scale.xy.min() * 0.5}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshNormalMaterial />
+        </e.mesh>
+      </SheetProvider>
+    </>
+  );
+}
+
+function LockedCameraScene({ scroll }) {
+  const el = useRef();
+  const scrollState = scroll;
+
+  return (
+    <>
+      <div className="StickyContainer">
+        <div ref={el} className="SceneContainer Debug"></div>
+      </div>
       <UseCanvas>
-        <ScrollScene track={el}>
+        <StickyScrollScene track={el}>
           {({ scale, ...props }) => (
             <>
-              <SheetProvider sheet={demoSheet}>
-                <e.mesh theatreKey="Cube" scale={scale.xy.min() * 0.5}>
-                  <boxGeometry args={[1, 1, 1]} />
-                  <meshNormalMaterial />
-                </e.mesh>
-              </SheetProvider>
+              <TrackTheatreProgress scale={scale} scrollState={scrollState} />
             </>
           )}
-        </ScrollScene>
+        </StickyScrollScene>
       </UseCanvas>
     </>
   );
 }
 export default function Home() {
+  const scroll = useScrollbar();
+
   return (
     <>
       <SmoothScrollbar>
         {(bind) => (
           <article {...bind}>
             <h1>Home Test</h1>
-            <LockedCameraScene />
-            <LockedCameraScene />
-            <LockedCameraScene />
+            <LockedCameraScene scroll={scroll} />
           </article>
         )}
       </SmoothScrollbar>
