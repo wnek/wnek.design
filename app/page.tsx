@@ -13,9 +13,12 @@ import { getProject, val } from '@theatre/core';
 import { editable as e, SheetProvider, useCurrentSheet } from '@theatre/r3f';
 
 import { useFrame } from '@react-three/fiber';
+import DemoProject from '../public/DemoProject.theatre-project-state.json';
 
 function TrackTheatreProgress({ scale, scrollState }) {
-  const demoSheet = getProject('Demo Project').sheet('Demo Sheet');
+  const demoSheet = getProject('DemoProject', { state: DemoProject }).sheet(
+    'DemoSheet'
+  );
   const sequenceLength = val(demoSheet.sequence.pointer.length);
 
   useFrame(() => {
