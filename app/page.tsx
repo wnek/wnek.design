@@ -15,11 +15,11 @@ import { editable as e, SheetProvider, useCurrentSheet } from '@theatre/r3f';
 import { useFrame } from '@react-three/fiber';
 import DemoProject from '../public/DemoProject.theatre-project-state.json';
 
-function TrackTheatreProgress({ scale, scrollState }) {
+function TrackTheatreProgress({ scale, scrollState }: any) {
   const demoSheet = getProject('DemoProject', { state: DemoProject }).sheet(
     'DemoSheet'
   );
-  const sequenceLength = val(demoSheet.sequence.pointer.length);
+  const sequenceLength: number = val(demoSheet.sequence.pointer.length);
 
   useFrame(() => {
     demoSheet.sequence.position = scrollState.scroll.progress * sequenceLength;
@@ -37,9 +37,9 @@ function TrackTheatreProgress({ scale, scrollState }) {
   );
 }
 
-function LockedCameraScene({ scroll }) {
-  const el = useRef();
-  const scrollState = scroll;
+function LockedCameraScene({ scroll }: any) {
+  const el = useRef(null);
+  const scrollState: any = scroll;
 
   return (
     <>
@@ -48,7 +48,7 @@ function LockedCameraScene({ scroll }) {
       </div>
       <UseCanvas>
         <StickyScrollScene track={el}>
-          {({ scale, ...props }) => (
+          {({ scale, ...props }: any) => (
             <>
               <TrackTheatreProgress scale={scale} scrollState={scrollState} />
             </>
