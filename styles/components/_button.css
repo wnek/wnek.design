@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  background-color: black;
+  border: 0;
+  border-radius: var(--small-radius);
+  color: #fff;
+  padding: 0.4em 1em;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--grey-100);
+}

@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  display: block;
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 20em;
+  display: flex;
+  position: relative;
+}
+
+footer .container {
+  width: 70vw;
+  margin: auto;
+}
