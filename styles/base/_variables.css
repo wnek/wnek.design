@@ -17,9 +17,15 @@
 
   /* Radius */
   --small-radius: 0.25em;
+  --medium-radius: 0.5em;
 
   /* Colors */
+  --yellow: #ffe601;
   --black: #000;
   --white: #fff;
+  --white-05: rgba(255, 255, 255, 0.02);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-60: rgba(255, 255, 255, 0.6);
   --grey-100: #3c3c3c;
+  --grey-90: #6b6b6b;
 }

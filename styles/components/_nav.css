@@ -1,5 +1,5 @@
 nav {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -8,9 +8,10 @@ nav {
   z-index: 100;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: var(--small-radius);
+  border-radius: var(--medium-radius);
   margin-top: 2em;
   padding: 0.5em 0.5em 0.5em 1em;
+  backdrop-filter: blur(10px);
 }
 
 nav ul {
