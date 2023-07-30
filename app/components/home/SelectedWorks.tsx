@@ -1,8 +1,11 @@
 export default function SelectedWorks() {
   return (
-    <section className="selected-work">
-      <div className="container">
-        <h2>Selected Works</h2>
+    <section className="selected-works">
+      <div className="selected-works_container">
+        <div className="selected-works_hero">
+          <h2>Selected Works</h2>
+          <p className="label grey">2020-2023</p>
+        </div>
         <div className="one-work">
           <h3>Tagger</h3>
           <h4>
@@ -13,15 +16,15 @@ export default function SelectedWorks() {
           <table>
             <tbody>
               <tr>
-                <td>Project</td>
+                <td className="light-grey">Project</td>
                 <td>Global Influencer Marketing Platform</td>
               </tr>
               <tr>
-                <td>Role</td>
+                <td className="light-grey">Role</td>
                 <td>Head of Product Design and Growth</td>
               </tr>
               <tr>
-                <td>Responsibilities</td>
+                <td className="light-grey">Responsibilities</td>
                 <td>
                   <ul>
                     <li>Branding</li>
@@ -37,11 +40,12 @@ export default function SelectedWorks() {
               </tr>
             </tbody>
           </table>
-          <h4>TBD</h4>
-          <p>Bartek Radziszewski</p>
-          <p>CPO and CTO, Tagger</p>
-
-          <img />
+          <div className="img"></div>
+          <div className="testimonial">
+            <h4>TBD</h4>
+            <p>Bartek Radziszewski</p>
+            <p className="light-grey">CPO and CTO, Tagger</p>
+          </div>
         </div>
         <div className="one-work">
           <h3>Theatre.js</h3>
@@ -53,15 +57,15 @@ export default function SelectedWorks() {
           <table>
             <tbody>
               <tr>
-                <td>Project</td>
+                <td className="light-grey">Project</td>
                 <td>Animation solution for web experiences</td>
               </tr>
               <tr>
-                <td>Role</td>
+                <td className="light-grey">Role</td>
                 <td>Founding Designer</td>
               </tr>
               <tr>
-                <td>Responsibilities</td>
+                <td className="light-grey">Responsibilities</td>
                 <td>
                   <ul>
                     <li>Branding</li>
@@ -75,18 +79,21 @@ export default function SelectedWorks() {
               </tr>
             </tbody>
           </table>
-          <h4>
-            Mariusz is the most reliable design partner I've had. Together, we
-            worked on a large problem space, and I got to watch him switch
-            between branding design to 3D animation to the minutia of state
-            machine interaction design, in the span of a day. No matter how
-            esoteric the task, Mariusz would get it done. On top of that
-            versatility, he is just a pleasant person to work and hang out with.
-          </h4>
-          <p>Aria Minaei</p>
-          <p>CEO and Founder, Theatre.js</p>
-
-          <img />
+          <div className="img"></div>
+          <div className="testimonial">
+            <h4>
+              Mariusz is{' '}
+              <span className="black">the most reliable design partner</span>{' '}
+              I've had. Together, we worked on a large problem space, and I got
+              to watch him switch between branding design to 3D animation to the
+              minutia of state machine interaction design, in the span of a day.
+              No matter how esoteric the task, Mariusz would get it done. On top
+              of that versatility, he is just a pleasant person to work and hang
+              out with.
+            </h4>
+            <p>Aria Minaei</p>
+            <p className="light-grey">CEO and Founder, Theatre.js</p>
+          </div>
         </div>
         <div className="one-work">
           <h3>Setmore</h3>
@@ -97,15 +104,15 @@ export default function SelectedWorks() {
           <table>
             <tbody>
               <tr>
-                <td>Project</td>
+                <td className="light-grey">Project</td>
                 <td>Scheduling SaaS</td>
               </tr>
               <tr>
-                <td>Role</td>
+                <td className="light-grey">Role</td>
                 <td>Head of Product Design</td>
               </tr>
               <tr>
-                <td>Responsibilities</td>
+                <td className="light-grey">Responsibilities</td>
                 <td>
                   <ul>
                     <li>Product Strategy</li>
@@ -119,17 +126,20 @@ export default function SelectedWorks() {
               </tr>
             </tbody>
           </table>
-          <h4>
-            Mariusz was an incredible asset to our team. His strategic thinking
-            over products architecture, his design eye and ability to add value
-            to both design & dev teams led to more viable and future proof
-            products with a focus on customer experience and key metrics at all
-            times.
-          </h4>
-          <p>Adeline Graham</p>
-          <p>Brand Director, Setmore</p>
-
-          <img />
+          <div className="img"></div>
+          <div className="testimonial">
+            <h4>
+              Mariusz was an incredible asset to our team. His{' '}
+              <span className="black">
+                strategic thinking over products architecture
+              </span>
+              , his design eye and ability to add value to both design & dev
+              teams led to more viable and future proof products with a focus on
+              customer experience and key metrics at all times.
+            </h4>
+            <p>Adeline Graham</p>
+            <p className="light-grey">Brand Director, Setmore</p>
+          </div>
         </div>
       </div>
     </section>

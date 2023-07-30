@@ -13,5 +13,8 @@
 
 @import url('components/home/_manifesto.css');
 @import url('components/home/_selected-work.css');
+@import url('components/home/_about-me.css');
+@import url('components/home/_skills.css');
+@import url('components/home/_contact.css');
 
 @import url('utilities/color-spans.css');

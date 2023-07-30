@@ -1,0 +1,28 @@
+.skills {
+  padding: 10em 0;
+  background-color: var(--background);
+}
+
+.skills h2 {
+  margin-bottom: 1em;
+}
+.skills_container {
+  width: 70vw;
+  margin: auto;
+  border-radius: var(--medium-radius);
+  border: 1px solid var(--white);
+  padding: 2em;
+}
+
+.skills_one-skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--white);
+  border-radius: var(--medium-radius);
+  padding: 1em 2em 4em 1em;
+  margin-bottom: 0.2em;
+}
+
+.skills_one-skill :last-child {
+  color: var(--grey-50);
+}

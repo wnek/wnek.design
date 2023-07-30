@@ -119,3 +119,9 @@
     grid-row-start: auto;
   }
 }
+
+@media (max-width: 1200px) {
+  .manifesto .container {
+    width: 90vw;
+  }
+}

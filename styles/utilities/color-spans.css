@@ -1,7 +1,14 @@
+.light-grey {
+  color: var(--grey-50);
+}
 .grey {
   color: var(--grey-90);
 }
 
 .yellow {
   color: var(--yellow);
+}
+
+.black {
+  color: #000;
 }

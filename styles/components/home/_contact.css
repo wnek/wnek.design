@@ -1,0 +1,16 @@
+.contact {
+  padding: 10em 0;
+  background-color: var(--background);
+  height: 100vh;
+}
+.contact_container {
+  width: 70vw;
+  margin: auto;
+}
+
+.contact h2 {
+  font-size: var(--step-9);
+  color: var(--white);
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}

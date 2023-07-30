@@ -20,12 +20,21 @@
   --medium-radius: 0.5em;
 
   /* Colors */
-  --yellow: #ffe601;
+  --yellow: #ffdd33;
   --black: #000;
   --white: #fff;
-  --white-05: rgba(255, 255, 255, 0.02);
+  --white-05: rgba(255, 255, 255, 0.05);
   --white-10: rgba(255, 255, 255, 0.1);
   --white-60: rgba(255, 255, 255, 0.6);
+  --background: #eeeeee;
   --grey-100: #3c3c3c;
   --grey-90: #6b6b6b;
+  --grey-50: #959595;
+
+  /* Shadow */
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-medium: 0px 0.8px 0.9px hsl(var(--shadow-color) / 0.2),
+    0px 2.7px 3px -0.8px hsl(var(--shadow-color) / 0.1),
+    0.1px 6.8px 7.7px -1.7px hsl(var(--shadow-color) / 0.2),
+    0.2px 16.6px 18.7px -2.5px hsl(var(--shadow-color) / 0.2);
 }

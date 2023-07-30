@@ -1,9 +1,11 @@
 export default function Contact() {
   return (
     <section className="contact">
-      <div className="container">
-        <h2>Contact</h2>
-        <h2>Ready to test your business idea?</h2>
+      <div className="contact_container">
+        <p className="label">Contact</p>
+        <h2>
+          Ready to test <span className="black">your business idea?</span>
+        </h2>
       </div>
     </section>
   );

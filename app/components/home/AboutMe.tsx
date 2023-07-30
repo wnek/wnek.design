@@ -1,14 +1,14 @@
 export default function AboutMe() {
   return (
     <section className="about-me">
-      <div className="container">
+      <div className="about-me_container">
         <h2>About Me</h2>
-        <p>
+        <h3>
           I'm a designer with a unique background in psychology. I bridge the
           gap between business, people, and technology. Unlike an artist, I
           focus on studying and measuring the impact of design on various
           business models.
-        </p>
+        </h3>
         <p>
           One of my secret skills is cleaning up any mess I come across. I excel
           in piecing together fragments and setting things in motion. I'm always

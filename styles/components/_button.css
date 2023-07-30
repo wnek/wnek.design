@@ -1,6 +1,6 @@
 .button {
   display: block;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.1);
   border: 0;
   border-radius: var(--small-radius);
   color: #fff;
@@ -9,5 +9,5 @@
 }
 
 .button:hover {
-  background-color: var(--grey-100);
+  background-color: rgba(255, 255, 255, 0.2);
 }

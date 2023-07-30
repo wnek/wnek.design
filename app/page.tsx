@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 import Hero from './components/3d/Hero';
 import Manifesto from './components/home/Manifesto';
-import SelectedWork from './components/home/SelectedWork';
+import SelectedWorks from './components/home/SelectedWorks';
 import AboutMe from './components/home/AboutMe';
 import Skills from './components/home/Skills';
 import Contact from './components/home/Contact';
@@ -53,7 +53,7 @@ export default function Home() {
           <main {...bind}>
             <HeroSection scroll={scroll} />
             <Manifesto />
-            <SelectedWork />
+            <SelectedWorks />
             <AboutMe />
             <Skills />
             <Contact />

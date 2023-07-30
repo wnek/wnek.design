@@ -6,9 +6,9 @@ export default function Manifesto() {
           <p className="label yellow">Manifesto</p>
           <h2>
             <span className="grey">
-              According to Harvard Business Review, 75% of startups
-              unfortunately don't succeed. I know the frustration of working
-              hard and not seeing results.
+              According to Harvard Business Review, 75% of startups don't
+              succeed. I know the frustration of working hard and not seeing
+              results.
             </span>{' '}
             I also know the solution.
           </h2>
@@ -46,8 +46,10 @@ export default function Manifesto() {
         </div>
         <div className="manifesto_cta">
           <h2>
-            Uncover what works for your business and how to grow your products
-            by design.
+            Uncover what works for your business{' '}
+            <span className="grey">
+              and how to grow your products by design.
+            </span>
           </h2>
           <p className="label">
             <span className="yellow">―</span> Mariusz Wnęk

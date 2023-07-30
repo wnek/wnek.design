@@ -1,0 +1,34 @@
+.about-me {
+  background-color: var(--black);
+  padding: 10em 0;
+  background: var(--black);
+  color: var(--white-60);
+}
+
+.about-me_container {
+  width: 70vw;
+  margin: auto;
+  border-radius: var(--medium-radius);
+  border: 1px solid var(--white-10);
+  width: 70vw;
+  padding: 2em;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.about-me h2 {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.about-me h3 {
+  color: var(--white);
+  grid-column-start: 6;
+  grid-column-end: 12;
+}
+.about-me p {
+  color: var(--white);
+  grid-column-start: 6;
+  grid-column-end: 12;
+}
