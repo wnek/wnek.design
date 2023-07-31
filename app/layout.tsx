@@ -13,10 +13,10 @@ const Switzer = localFont({
 
 import Nav from './components/layout/Nav';
 
-if (typeof window !== 'undefined') {
-  studio.initialize();
-  studio.extend(extension);
-}
+// if (typeof window !== 'undefined') {
+//   studio.initialize();
+//   studio.extend(extension);
+// }
 
 export default function RootLayout({
   children,
