@@ -42,7 +42,16 @@ export default function SelectedWorks() {
           </table>
           <div className="img"></div>
           <div className="testimonial">
-            <h4>TBD</h4>
+            <h4>
+              Mariusz has a special mix of forward-thinking vision, careful
+              attention to details, and{' '}
+              <span className="black">
+                a deep understanding of what users need
+              </span>
+              . This blend has helped him create innovative designs that look
+              good and work well. He also stands out because of his ability to
+              guide and motivate others.
+            </h4>
             <p>Bartek Radziszewski</p>
             <p className="light-grey">CPO and CTO, Tagger</p>
           </div>

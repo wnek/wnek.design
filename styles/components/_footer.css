@@ -1,16 +1,50 @@
 footer {
   width: 100%;
-  overflow: hidden;
   height: 100vh;
+  overflow: hidden;
   display: block;
   color: var(--black);
   background-color: var(--white);
-  font-size: 20em;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10em 0 0 0;
 }
 
 footer .container {
   width: 70vw;
-  margin: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10em;
+}
+
+.footnote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.legal {
+  border-top: 1px solid var(--background);
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-50);
+  padding: 1em 0 0 0;
+}
+
+.legal p {
+  font-size: var(--step--2);
 }
