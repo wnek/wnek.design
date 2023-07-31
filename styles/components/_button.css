@@ -1,13 +1,18 @@
 .button {
   display: block;
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
   border: 0;
   border-radius: var(--small-radius);
-  color: #fff;
-  padding: 0.4em 1em;
+  color: #222;
+  padding: 0.4em 1.5em;
   text-decoration: none;
+  background-color: var(--yellow);
+  transition: all;
+  transition-duration: 0.2s;
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background-color: var(--black);
+  color: var(--white);
 }

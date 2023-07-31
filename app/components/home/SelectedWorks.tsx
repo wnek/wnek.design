@@ -4,7 +4,7 @@ export default function SelectedWorks() {
       <div className="selected-works_container">
         <div className="selected-works_hero">
           <h2>Selected Works</h2>
-          <p className="label grey">2020-2023</p>
+          <h2 className="white">2020-2023</h2>
         </div>
         <div className="one-work">
           <h3>Tagger</h3>
@@ -42,18 +42,18 @@ export default function SelectedWorks() {
           </table>
           <div className="img"></div>
           <div className="testimonial">
-            <h4>
-              Mariusz has a special mix of forward-thinking vision, careful
-              attention to details, and{' '}
+            <h5>
+              &ldquo;Mariusz has a special mix of forward-thinking vision,
+              careful attention to details, and{' '}
               <span className="black">
                 a deep understanding of what users need
               </span>
               . This blend has helped him create innovative designs that look
               good and work well. He also stands out because of his ability to
-              guide and motivate others.
-            </h4>
-            <p>Bartek Radziszewski</p>
-            <p className="light-grey">CPO and CTO, Tagger</p>
+              guide and motivate others.&rdquo;
+            </h5>
+            <p className="label">Bartek Radziszewski</p>
+            <p className="label light-grey">CPO and CTO, Tagger</p>
           </div>
         </div>
         <div className="one-work">
@@ -90,18 +90,18 @@ export default function SelectedWorks() {
           </table>
           <div className="img"></div>
           <div className="testimonial">
-            <h4>
-              Mariusz is{' '}
+            <h5>
+              &ldquo;Mariusz is{' '}
               <span className="black">the most reliable design partner</span>{' '}
               I've had. Together, we worked on a large problem space, and I got
               to watch him switch between branding design to 3D animation to the
               minutia of state machine interaction design, in the span of a day.
               No matter how esoteric the task, Mariusz would get it done. On top
               of that versatility, he is just a pleasant person to work and hang
-              out with.
-            </h4>
-            <p>Aria Minaei</p>
-            <p className="light-grey">CEO and Founder, Theatre.js</p>
+              out with.&rdquo;
+            </h5>
+            <p className="label">Aria Minaei</p>
+            <p className="label light-grey">CEO and Founder, Theatre.js</p>
           </div>
         </div>
         <div className="one-work">
@@ -137,17 +137,17 @@ export default function SelectedWorks() {
           </table>
           <div className="img"></div>
           <div className="testimonial">
-            <h4>
-              Mariusz was an incredible asset to our team. His{' '}
+            <h5>
+              &ldquo;Mariusz was an incredible asset to our team. His{' '}
               <span className="black">
                 strategic thinking over products architecture
               </span>
               , his design eye and ability to add value to both design & dev
               teams led to more viable and future proof products with a focus on
-              customer experience and key metrics at all times.
-            </h4>
-            <p>Adeline Graham</p>
-            <p className="light-grey">Brand Director, Setmore</p>
+              customer experience and key metrics at all times.&rdquo;
+            </h5>
+            <p className="label">Adeline Graham</p>
+            <p className="label light-grey">Brand Director, Setmore</p>
           </div>
         </div>
       </div>

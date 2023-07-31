@@ -11,7 +11,7 @@ export default function Nav() {
           <li className="disabled">Mentoring</li>
         </ul>
         <a className="button" href="mailto:hi@wnek.design">
-          Contact
+          Contact <span className="arrow">&nbsp;&nbsp;&nbsp;→</span>
         </a>
       </div>
     </nav>

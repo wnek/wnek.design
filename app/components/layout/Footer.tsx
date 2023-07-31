@@ -40,6 +40,7 @@ export default function Footer() {
           <p>©2023 No rights reserved.</p>
         </div>
       </div>
+      <div className="dots"></div>
     </footer>
   );
 }

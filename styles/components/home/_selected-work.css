@@ -18,7 +18,7 @@
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .one-work {
@@ -38,6 +38,13 @@
 }
 
 .one-work h4 {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  color: var(--grey-50);
+  padding: 0 0 6em 0;
+}
+
+.one-work h5 {
   grid-column-start: 6;
   grid-column-end: 12;
   color: var(--grey-50);

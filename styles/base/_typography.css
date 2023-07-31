@@ -22,6 +22,14 @@ h4 {
   line-height: 120%;
 }
 
+h5 {
+  font-size: var(--step-1);
+  font-weight: 300;
+  line-height: 120%;
+  hanging-punctuation: first;
+  text-indent: -0.4em;
+}
+
 p {
   font-size: var(--step--1);
   line-height: 160%;
