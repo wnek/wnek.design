@@ -23,6 +23,7 @@ import { getProject, val } from '@theatre/core';
 import { editable as e, SheetProvider, PerspectiveCamera } from '@theatre/r3f';
 import DemoProject from 'public/DemoProject.theatre-project-state.json';
 import { MeshBasicMaterial } from 'three';
+import { Model } from './Model';
 
 // Types
 type GLTFResult = GLTF & {
@@ -56,64 +57,17 @@ export default function Hero(props) {
           up={[0, 0, -1]}
         />
 
-        <ContactShadows
-          opacity={0.2}
-          scale={10}
-          blur={2}
-          far={10}
-          resolution={256}
-          color="grey"
-          bias={0.0002}
+        <Model
+          args={[2, 1]}
+          scale={5}
+          rotation={[0, 0, 0]}
+          position={[0, 0, 0]}
         />
-
-        <Text
-          color={'black'}
-          rotation={[-Math.PI / 2, 0, 0]}
-          position={[0, 0.1, 0]}
-        >
-          Growth by design
-        </Text>
-
-        <Plane
-          args={[2, 1]}
-          scale={5}
-          rotation={[-Math.PI / 2, 0, 0]}
-          position={[0, -1, 0]}
-        >
-          <meshStandardMaterial color="#F5F5F5" />
-        </Plane>
-
-        <Plane
-          args={[2, 1]}
-          scale={5}
-          rotation={[-Math.PI / 2, 0, 0]}
-          position={[0, -2, 0]}
-        >
-          <meshStandardMaterial color="#000000" />
-        </Plane>
-
-        <Plane
-          args={[2, 1]}
-          scale={5}
-          rotation={[-Math.PI / 2, 0, 0]}
-          position={[0, -3, 0]}
-        >
-          <meshStandardMaterial color="#F5F5F5" />
-        </Plane>
-
-        <Plane
-          args={[2, 1]}
-          scale={5}
-          rotation={[-Math.PI / 2, 0, 0]}
-          position={[0, -4, 0]}
-        >
-          <meshStandardMaterial color="#F5F5F5" />
-        </Plane>
 
         <Environment
           files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/dancing_hall_1k.hdr"
           background={false}
-          blur={1}
+          blur={2}
         />
 
         <RandomizedLight

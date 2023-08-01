@@ -1,0 +1,36 @@
+{
+  "sheetsById": {
+    "R3F UI": {
+      "staticOverrides": {
+        "byObject": {
+          "Editor Camera snapshot #1": {
+            "transform": {
+              "position": {
+                "x": -7.008504816822948,
+                "y": 6.858262777919777,
+                "z": 7.131863012324542
+              },
+              "target": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            }
+          },
+          "Editor": {
+            "transformControls": {
+              "mode": "rotate"
+            },
+            "viewport": {
+              "shading": "flat"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "L-KpsrbLvZpU-dpk"
+  ]
+}

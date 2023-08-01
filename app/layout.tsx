@@ -31,7 +31,7 @@ export default function RootLayout({
           gl={{ preserveDrawingBuffer: true }}
           scaleMultiplier={0.01}
           shadows
-          style={{ background: '#f0f0f0', zIndex: -1 }}
+          style={{ background: '#000', zIndex: -1 }}
         >
           {/* <color attach="background" args={['#000000']} /> */}
         </GlobalCanvas>

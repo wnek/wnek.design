@@ -29,7 +29,7 @@ function HeroSection({ scroll }: any) {
   return (
     <section>
       <div className="StickyContainer">
-        <div ref={el} className="SceneContainerContent Debug"></div>
+        <div ref={el} className="SceneContainerContent"></div>
       </div>
       <UseCanvas>
         <StickyScrollScene track={el}>
