@@ -1,11 +1,15 @@
 export default function SelectedWorks() {
   return (
     <section className="selected-works">
-      <div className="selected-works_container">
+      <div className="selected-works_hero-container">
+        {' '}
         <div className="selected-works_hero">
+          <p className="light-grey">2020-2023</p>
           <h2>Selected Works</h2>
-          <h2 className="white">2020-2023</h2>
         </div>
+      </div>
+
+      <div className="selected-works_container">
         <div className="one-work">
           <h3>Tagger</h3>
           <h4>
@@ -40,7 +44,10 @@ export default function SelectedWorks() {
               </tr>
             </tbody>
           </table>
-          <div className="img"></div>
+          <div className="img">
+            {' '}
+            <img src="./img/tagger.jpg" alt="Tagger" />
+          </div>
           <div className="testimonial">
             <h5>
               &ldquo;Mariusz has a special mix of forward-thinking vision,
@@ -88,7 +95,9 @@ export default function SelectedWorks() {
               </tr>
             </tbody>
           </table>
-          <div className="img"></div>
+          <div className="img">
+            <img src="./img/theatre.jpg" alt="Theatre.js" />
+          </div>
           <div className="testimonial">
             <h5>
               &ldquo;Mariusz is{' '}
@@ -135,7 +144,9 @@ export default function SelectedWorks() {
               </tr>
             </tbody>
           </table>
-          <div className="img"></div>
+          <div className="img">
+            <img src="./img/setmore.jpg" alt="Setmore" />
+          </div>
           <div className="testimonial">
             <h5>
               &ldquo;Mariusz was an incredible asset to our team. His{' '}

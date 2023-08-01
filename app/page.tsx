@@ -55,7 +55,6 @@ export default function Home() {
             <Manifesto />
             <SelectedWorks />
             <AboutMe />
-            <Skills />
             <Contact />
             <Footer />
           </main>

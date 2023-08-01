@@ -2,10 +2,15 @@ export default function Contact() {
   return (
     <section className="contact">
       <div className="contact_container">
-        <p className="label">Contact</p>
         <h2>
-          Ready to test <span className="black">your business idea?</span>
+          Ready to accelerate{' '}
+          <span className="black">your business growth?</span>
         </h2>
+        <div className="button-container">
+          <a className="button" href="mailto:hi@wnek.design">
+            Let's talk <span className="arrow"></span>
+          </a>
+        </div>
       </div>
     </section>
   );

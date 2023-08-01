@@ -1,24 +1,28 @@
 .selected-works {
   background-color: var(--white);
-  padding: 10em;
+  padding-bottom: 10em;
 }
 
 .selected-works_container {
   width: 70vw;
   margin: auto;
 }
+.selected-works_hero-container {
+  width: 100%;
+  background-image: radial-gradient(#d9d9d9 20%, transparent 20%),
+    radial-gradient(#d9d9d9 20%, transparent 20%);
+  background-color: #fff;
+  background-size: 4px 4px;
+}
 
-.selected-works_hero {
+.selected-works .selected-works_hero {
   height: 70vh;
-  border-radius: var(--medium-radius);
-  border: 1px solid var(--background);
   width: 70vw;
   margin: auto;
-  padding: 2em;
-  background-color: var(--background);
+  padding: 10em 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .one-work {
@@ -26,7 +30,7 @@
   border: 1px solid var(--background);
   width: 70vw;
   padding: 2em;
-  margin: 5em auto;
+  margin: 10em auto;
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(12, 1fr);
@@ -90,10 +94,11 @@
   background-color: var(--background);
   display: block;
   width: 100%;
-  height: 70vh;
-  border-radius: var(--small-radius);
+  height: auto;
+  border-radius: var(--medium-radius);
   grid-column-start: 1;
   grid-column-end: 13;
+  overflow: hidden;
 }
 
 .selected-works .one-work .testimonial {

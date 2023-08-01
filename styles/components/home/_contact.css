@@ -1,11 +1,17 @@
 .contact {
   padding: 10em 0;
   background-color: var(--background);
-  height: 100vh;
+  height: 100vh auto;
 }
 .contact_container {
   width: 70vw;
   margin: auto;
+  border: 1px solid #cdcdcd;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2em;
+  border-radius: var(--medium-radius);
+  padding: 2em;
 }
 
 .contact h2 {
@@ -13,4 +19,21 @@
   color: var(--white);
   line-height: 100%;
   letter-spacing: -0.02em;
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.contact .button-container {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em 0;
+  margin-top: 10em;
+}
+
+.contact .button-container .button {
+  color: #fff;
+  background-color: #222;
 }

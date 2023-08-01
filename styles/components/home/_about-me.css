@@ -17,6 +17,32 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+.about-me_text {
+  grid-column-start: 6;
+  grid-column-end: 12;
+}
+
+.about-me_paragraphs {
+  margin-top: 5em;
+  display: flex;
+  gap: 2em;
+}
+.about-me_paragraphs p {
+  width: 50%;
+}
+
+.about-me img {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-radius: var(--medium-radius);
+}
+
+.about-me_container .about-me-label {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  padding-bottom: 8em;
+}
+
 .about-me h2 {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -28,7 +54,25 @@
   grid-column-end: 12;
 }
 .about-me p {
-  color: var(--white);
   grid-column-start: 6;
   grid-column-end: 12;
+}
+
+.list-of-skills {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  margin: 10em 0;
+}
+
+.list-of-skills .skills_one-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.2em;
+  background-color: var(--white-05);
+  border-radius: var(--medium-radius);
+  padding: 1em 1em 4em 1em;
 }
