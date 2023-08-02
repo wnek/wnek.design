@@ -105,3 +105,33 @@
   grid-column-start: 6;
   grid-column-end: 12;
 }
+@media (max-width: 768px) {
+  .selected-works_container {
+    width: 90vw;
+  }
+  .one-work {
+    width: 90vw;
+  }
+  .one-work h3 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .one-work h4 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .one-work table {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .selected-works .one-work .testimonial {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+}
+
+@media (max-width: 1200px) {
+  .selected-works_container {
+    width: 90vw;
+  }
+}

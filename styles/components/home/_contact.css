@@ -37,3 +37,18 @@
   color: #fff;
   background-color: #222;
 }
+
+@media (max-width: 768px) {
+  .contact_container {
+    width: 90vw;
+  }
+  .contact h2 {
+    font-size: var(--step-4);
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact_container {
+    width: 90vw;
+  }
+}

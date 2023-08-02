@@ -59,3 +59,21 @@ footer a {
   height: 50vh;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  footer .container {
+    width: 90vw;
+  }
+  .legal {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 2em;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer .container {
+    width: 90vw;
+  }
+}
