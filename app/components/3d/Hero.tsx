@@ -18,6 +18,15 @@ import {
   Center,
 } from '@react-three/drei';
 
+import {
+  Bloom,
+  DepthOfField,
+  EffectComposer,
+  Noise,
+  Vignette,
+} from '@react-three/postprocessing';
+import { BlendFunction } from 'postprocessing';
+
 // Theatre.js
 import { getProject, val } from '@theatre/core';
 import { editable as e, SheetProvider, PerspectiveCamera } from '@theatre/r3f';
@@ -56,7 +65,9 @@ export default function Hero(props) {
           rotation={[0, 0, 0]}
           up={[0, 0, -1]}
         />
-
+        <EffectComposer>
+          <Noise opacity={1} premultiply blendFunction={BlendFunction.ADD} />
+        </EffectComposer>
         <Model
           args={[2, 1]}
           scale={5}
