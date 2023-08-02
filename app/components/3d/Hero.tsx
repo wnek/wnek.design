@@ -78,7 +78,7 @@ export default function Hero(props) {
         <Environment
           files="./img/studio_small_07_1k.hdr"
           background={false}
-          blur={2}
+          blur={1}
         />
 
         <color args={[0x088]} attach="background" />
