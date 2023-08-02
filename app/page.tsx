@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <>
-      <SmoothScrollbar>
+      <SmoothScrollbar enabled={false} locked={false}>
         {(bind) => (
           <main {...bind}>
             <HeroSection scroll={scroll} />
