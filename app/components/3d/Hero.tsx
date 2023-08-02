@@ -9,6 +9,7 @@ import {
   ContactShadows,
   CameraControls,
   Environment,
+  Lightformer,
   RandomizedLight,
   Plane,
   MeshTransmissionMaterial,
@@ -75,11 +76,29 @@ export default function Hero(props) {
           position={[0, 0, 0]}
         />
 
-        <Environment
-          files="./img/studio_small_07_1k.hdr"
-          background={false}
-          blur={1}
-        />
+        <Environment resolution={1024}>
+          <Lightformer
+            position-z={-2}
+            scale={1}
+            color="white"
+            intensity={100}
+            form="ring"
+          />
+          <Lightformer
+            position-z={-6}
+            scale={5}
+            color="white"
+            intensity={1}
+            form="ring"
+          />
+          <Lightformer
+            position-z={6}
+            scale={5}
+            color="white"
+            intensity={10}
+            form="ring"
+          />
+        </Environment>
 
         <color args={[0x088]} attach="background" />
       </SheetProvider>

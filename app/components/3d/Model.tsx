@@ -35,14 +35,16 @@ export function Model(props) {
         geometry={nodes.glass.geometry}
       >
         <meshPhysicalMaterial
-          color={'#fff'}
+          color={'white'}
           transparent={true}
-          opacity={0.1}
-          roughness={0.01}
-          metalness={1}
-          transmission={0.9}
+          roughness={0.9}
+          metalness={0.5}
+          transmission={1}
           clearcoat={1}
-          clearcoatRoughness={0.1}
+          clearcoatRoughness={1}
+          ior={1.2}
+          envMapIntensity={1}
+          thickness={0.6}
         />
       </e.mesh>
 
