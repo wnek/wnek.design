@@ -27,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={Switzer.className}>
         <Nav />
+
         <GlobalCanvas
           gl={{ preserveDrawingBuffer: true }}
           scaleMultiplier={0.01}

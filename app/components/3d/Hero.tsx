@@ -65,9 +65,9 @@ export default function Hero(props) {
           rotation={[0, 0, 0]}
           up={[0, 0, -1]}
         />
-        <EffectComposer>
+        {/* <EffectComposer>
           <Noise opacity={1} premultiply blendFunction={BlendFunction.ADD} />
-        </EffectComposer>
+        </EffectComposer> */}
         <Model
           args={[2, 1]}
           scale={5}
@@ -76,19 +76,11 @@ export default function Hero(props) {
         />
 
         <Environment
-          files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/dancing_hall_1k.hdr"
+          files="./img/studio_small_07_1k.hdr"
           background={false}
           blur={2}
         />
 
-        <RandomizedLight
-          amount={10}
-          radius={4}
-          ambient={1}
-          intensity={1}
-          position={[0, 2, 0]}
-          bias={0.001}
-        />
         <color args={[0x088]} attach="background" />
       </SheetProvider>
     </>
