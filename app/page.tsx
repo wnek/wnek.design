@@ -35,7 +35,7 @@ function HeroSection({ scroll }: any) {
         <StickyScrollScene track={el}>
           {(props) => (
             <>
-              <Hero {...props} /> <Perf />
+              <Hero {...props} />
             </>
           )}
         </StickyScrollScene>
