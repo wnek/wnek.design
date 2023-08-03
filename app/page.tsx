@@ -31,7 +31,7 @@ function HeroSection({ scroll }: any) {
       <div className="StickyContainer">
         <div ref={el} className="SceneContainerContent"></div>
       </div>
-      <UseCanvas>
+      <UseCanvas pixelRatio={1}>
         <StickyScrollScene track={el}>
           {(props) => (
             <>

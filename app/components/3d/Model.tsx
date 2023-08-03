@@ -37,14 +37,15 @@ export function Model(props) {
         <meshPhysicalMaterial
           color={'white'}
           transparent={true}
-          roughness={0.9}
-          metalness={0.5}
-          transmission={1}
-          clearcoat={1}
-          clearcoatRoughness={1}
-          ior={1.2}
+          roughness={0}
+          reflectivity={1.2}
+          metalness={0.2}
+          transmission={0.1}
+          clearcoat={0}
+          clearcoatRoughness={0}
+          ior={1.4}
           envMapIntensity={1}
-          thickness={0.6}
+          thickness={0.03}
         />
       </e.mesh>
 
@@ -74,7 +75,7 @@ export function Model(props) {
         position={[0, -0.07, 0]}
       >
         <meshPhysicalMaterial
-          color={'#fff'}
+          color={'grey'}
           transparent={false}
           opacity={1}
           roughness={0.2}

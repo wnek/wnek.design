@@ -76,12 +76,12 @@ export default function Hero(props) {
           position={[0, 0, 0]}
         />
 
-        <Environment resolution={1024}>
+        <Environment resolution={512}>
           <Lightformer
             position-z={-2}
             scale={1}
             color="white"
-            intensity={100}
+            intensity={400}
             form="ring"
           />
           <Lightformer
