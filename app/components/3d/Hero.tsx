@@ -43,13 +43,14 @@ type GLTFResult = GLTF & {
   materials: {};
 };
 
-export default function Hero(props) {
+export default function Hero({ ...props }) {
   const demoSheet = getProject('DemoProject', { state: DemoProject }).sheet(
     'DemoSheet'
   );
   const sequenceLength: number = val(demoSheet.sequence.pointer.length);
 
-  console.log(props);
+  console.log('props' + props.scale)
+
   useFrame(() => {
     demoSheet.sequence.position = props.scrollState.progress * sequenceLength;
   });
@@ -57,6 +58,7 @@ export default function Hero(props) {
   return (
     <>
       <SheetProvider sheet={demoSheet}>
+
         <PerspectiveCamera
           theatreKey="Camera"
           lookAt={[0, 0, 0]}
@@ -66,12 +68,10 @@ export default function Hero(props) {
           rotation={[0, 0, 0]}
           up={[0, 0, -1]}
         />
-        {/* <EffectComposer>
-          <Noise opacity={1} premultiply blendFunction={BlendFunction.ADD} />
-        </EffectComposer> */}
+
         <Model
           args={[2, 1]}
-          scale={5}
+          scale={props.scale.xy.min() * 0.5}
           rotation={[0, 0, 0]}
           position={[0, 0, 0]}
         />

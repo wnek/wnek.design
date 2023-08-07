@@ -22,9 +22,13 @@ import {
 } from '@14islands/r3f-scroll-rig';
 import { StickyScrollScene } from '@14islands/r3f-scroll-rig/powerups';
 import { Perf } from 'r3f-perf';
+
+
 function HeroSection({ scroll }: any) {
   const el = useRef(null);
   const scrollState: any = scroll;
+
+
 
   return (
     <section>
