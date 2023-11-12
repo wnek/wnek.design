@@ -16,7 +16,7 @@
 
 .contact h2 {
   font-size: var(--step-9);
-  color: var(--white);
+  color: var(--grey-50);
   line-height: 100%;
   letter-spacing: -0.02em;
   grid-column-start: 1;
