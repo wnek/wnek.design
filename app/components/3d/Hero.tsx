@@ -1,38 +1,11 @@
-// React
-import { useRef } from 'react';
-
 // R3F and R3F/Drei
 import { useFrame, useThree } from '@react-three/fiber';
-import {
-  useGLTF,
-  AccumulativeShadows,
-  ContactShadows,
-  CameraControls,
-  Environment,
-  Lightformer,
-  RandomizedLight,
-  Plane,
-  MeshTransmissionMaterial,
-  Text,
-  // PerspectiveCamera,
-  OrbitControls,
-  Center,
-} from '@react-three/drei';
-
-import {
-  Bloom,
-  DepthOfField,
-  EffectComposer,
-  Noise,
-  Vignette,
-} from '@react-three/postprocessing';
-import { BlendFunction } from 'postprocessing';
+import { Environment, Lightformer } from '@react-three/drei';
 
 // Theatre.js
 import { getProject, val } from '@theatre/core';
 import { editable as e, SheetProvider, PerspectiveCamera } from '@theatre/r3f';
 import DemoProject from 'public/DemoProject.theatre-project-state.json';
-import { MeshBasicMaterial } from 'three';
 import { Model } from './Model';
 
 // Types
@@ -49,7 +22,7 @@ export default function Hero({ ...props }) {
   );
   const sequenceLength: number = val(demoSheet.sequence.pointer.length);
 
-  console.log('props' + props.scale)
+  console.log('props' + props.scale);
 
   useFrame(() => {
     demoSheet.sequence.position = props.scrollState.progress * sequenceLength;
@@ -58,7 +31,6 @@ export default function Hero({ ...props }) {
   return (
     <>
       <SheetProvider sheet={demoSheet}>
-
         <PerspectiveCamera
           theatreKey="Camera"
           lookAt={[0, 0, 0]}
